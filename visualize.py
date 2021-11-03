@@ -34,7 +34,7 @@ def vis(img, boxes, scores, cls_ids, image_name, conf=0.5, class_names=None):
             -1
         )
         cv2.putText(img, text, (x0, y0 + txt_size[1]), font, 0.4, txt_color, thickness=1)
-        save_folder = "/workspace/utkal_bestsubmission_annotations"
+        save_folder = "/workspace/bestsubmission_annotations"
         #os.makedirs(save_folder, exist_ok=True)
         if cls_id == 1:
             print(image_name)
