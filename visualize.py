@@ -35,7 +35,7 @@ def vis(img, boxes, scores, cls_ids, image_name, conf=0.5, class_names=None):
         )
         cv2.putText(img, text, (x0, y0 + txt_size[1]), font, 0.4, txt_color, thickness=1)
         save_folder = "/workspace/bestsubmission_annotations"
-        #os.makedirs(save_folder, exist_ok=True)
+        os.makedirs(save_folder, exist_ok=True)
         if cls_id == 1:
             print(image_name)
             save_file_name = os.path.join(save_folder, os.path.basename(image_name))
